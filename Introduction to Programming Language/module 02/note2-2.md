@@ -1,4 +1,4 @@
-## Modulus
+## Mod operator -- modulus 
 modulus is use for to find remainder.
 To find out the remainder of two numbers, we simply calculate a % b = remainder.  
 for example we can write write a c program:  
