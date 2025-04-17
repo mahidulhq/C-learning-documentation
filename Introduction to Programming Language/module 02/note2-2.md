@@ -1,7 +1,7 @@
 ## Mod operator -- modulus 
-modulus is use for to find remainder.
+Modulus (%) is used to find the remainder. % This symbol is called the mod operator in the C language.
 To find out the remainder of two numbers, we simply calculate a % b = remainder.  
-for example we can write write a c program:  
+For example, we can write a C program:  
 ```c
 #include <stdio.h>
 
