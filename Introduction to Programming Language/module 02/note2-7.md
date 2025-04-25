@@ -16,3 +16,19 @@ else {
       // codes
 }
 ```
+example code: 
+```c
+#include <stdio.h>
+
+int main() {
+    int BDT;
+    if(BDT >= 100) {
+        printf("I will eat");
+    } else {
+        printf("I will not eat");
+    }
+    return 0;
+}
+```
+
+
