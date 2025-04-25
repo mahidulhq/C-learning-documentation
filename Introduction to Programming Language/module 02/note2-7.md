@@ -22,7 +22,7 @@ example code:
 
 int main() {
     int BDT;
-    scabf("%d", &BDT);
+    scanf("%d", &BDT);
     
     if(BDT >= 100) {
         printf("I will eat");
