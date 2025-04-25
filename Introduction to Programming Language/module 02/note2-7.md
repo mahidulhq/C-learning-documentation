@@ -7,3 +7,12 @@ if i have 100BDT
 or else  
       i will not  
 ```
+to write condition we have to maintain this format:  
+```c
+if (condition) {
+      // codes
+}
+else {
+      // codes
+}
+```
