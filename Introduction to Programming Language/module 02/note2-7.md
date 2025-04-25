@@ -22,6 +22,8 @@ example code:
 
 int main() {
     int BDT;
+    scabf("%d", &BDT);
+    
     if(BDT >= 100) {
         printf("I will eat");
     } else {
