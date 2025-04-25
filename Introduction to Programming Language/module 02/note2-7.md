@@ -32,5 +32,10 @@ int main() {
     return 0;
 }
 ```
-
-
+we can input the money, if we input 100 or more than 100 we can eat burger, if we input lower than 100 we cant eat burger.  
+For example, we are choosing 120 BDT as an input.
+Input: 120
+Output:
+```C
+I will eat
+```
