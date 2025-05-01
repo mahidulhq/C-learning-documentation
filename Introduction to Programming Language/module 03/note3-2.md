@@ -10,5 +10,15 @@ for (initialization; condition; increment/decrement;) {
 }
 ```
 
-example code:
+example code: write "sorry" 100 time.  
 ```c
+#include <stdio.h>
+
+int main() {
+
+    for(int i = 1; i <= 100; i++) {
+        printf("Sorry\n");
+    }
+
+}
+```
