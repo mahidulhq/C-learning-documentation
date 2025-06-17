@@ -1,4 +1,191 @@
+## Introduction
 Programming: Programming is how we tell computers what to do by writing instructions in a language they understand. It’s like giving the computer a recipe to follow so it can perform tasks, solve problems, or create software. This involves writing code, testing it, and fixing any mistakes.
 
-
 Why C: Mother of all languages, C is more like a manual language.
+
+
+## Basic structure of C programming  
+Head --> Header files  
+Body --> main codes
+
+Header file: contains declarations for functions, macros, constants, and data types that can be shared between multiple source files. Header files help organize code and promote code reuse.
+
+
+## First c program 
+```c
+// Basic Structures
+#include<stdio.h>
+int main() {
+
+printf("Hello World");
+
+return 0;
+}
+```
+
+Output: 
+```c
+Hello World
+```
+
+A header file like **#include<stdio.h>** in programming is like a neuron in our brain. Just as neurons transmit signals and instructions to tell the body how to react, header files provide essential declarations and commands that guide the program on how to function.
+
+## more details
+```c
+// Basic Structures
+#include<stdio.h>
+int main() {
+
+printf("Hello World");
+
+return 0;
+}
+```
+where, int is the return type of the **main** function, then calling the function using **()**
+The full code must be inside of the **{}**, to end the function **return 0** is used. To the end of every line we must use a semicolon **;** to terminate statements.
+
+## bit/ byte
+```c
+#include<stdio.h>
+int main() {
+int num1 = 10;
+return 0;
+}
+```
+The 
+variable took size in memory, like  
+int --> 4 byte  
+float --> 4  byte  
+char --> 1 byte  
+
+on computer,   
+            8 bit = 1 byte  
+            
+            1021 byte = 1 kb  
+            1 kb = 1 mb  
+            1024 mb = 1 gb  
+            1021 gb = 1 tb  
+            ...  
+computers don't understand anything other than 0 and 1 (binary), so  
+0 = 1 bit  
+1 = 1 bit  
+0 = 1 bit  
+1 = 1 bit  
+
+## Data types
+specifier for data types,  
+int --> %d  
+float --> %f  
+char --> %c  
+
+```c
+#include <stdio.h>
+int main() {
+    int num1 = 10;
+    float f = 4.56;
+    char c = '8';
+
+    printf("%d\n", num1);
+    printf("%f\n", f);
+    printf("%c", c);
+
+    return 0;
+}
+```
+
+Output:
+```c
+10
+4.560000
+8
+```
+
+But on float data type, we want to print 4.56, but the output gave 4.560000, where are four extra zeros. To print specifically
+what we gave, we need to use %.2f specifier for float data type to print two numbers after a dot. 
+```c
+printf("%.2f\n", f);
+```
+output:
+```
+4.56
+```
+## Boolean data type
+boolean data type: data type for it is **bool**  
+bool only print true or false  
+where true means 1  
+      false means 0  
+To use the bool data type specific header file needed; the header file for it **#include<stdbool.h>**  
+bool datatype doesn't have any specific specifier, so as an integer %d is used to print bool.
+sample:  
+```c
+#include <stdio.h>
+#include <stdbool.h>
+int main() {
+    bool b = true;
+    printf("%d\n", b);
+    return 0;
+}
+```
+output:
+```
+1
+```
+or
+```c
+#include <stdio.h>
+#include <stdbool.h>
+int main() {
+    bool b = false;
+    printf("%d\n", b);
+    return 0;
+}
+```
+output:
+```
+0
+```
+## take input on C
+To take input on C, there is a function **scanf()**  
+Whatever we gave it as an input, it took it in and by using **printf()** it prints.
+
+& this symbol is called ampersand. It is used to represent the word "and."
+
+example:
+```c
+#include <stdio.h>
+int main() {
+    int a;
+    scanf("%d", &a);
+    
+    printf("%d", a);
+    return 0;
+}
+```
+on output you can enter any integer number, because we take the input as int datatype ``` int a; ```  
+
+now we can take input any datatypes  
+```c
+#include <stdio.h>
+int main() {
+    int a;
+    float f;
+    char c;
+
+    scanf("%d %f %c", &a, &f, &c);
+
+    printf("%d %f %c", a, f, c);
+}
+```
+output: 
+```c
+10 23.445000 v
+```
+
+
+## Data Type Limitations 
+int --> 4 bytes  
+long long int --> 8 bytes  
+
+float --> 4 bytes  
+double --> 8 bytes  
+
